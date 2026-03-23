@@ -1,10 +1,12 @@
-import { Text, View } from "react-native";
-import { estilos } from "./styles";
+import { Button } from "@/components/Button";
+import { Image, View } from "react-native";
+import { styles } from "./styles";
 
 export function Home() {
   return (
-    <View style={estilos.container}>
-      <Text style={estilos.text}>Olá, Mundo!</Text>
+    <View style={styles.container}>
+      <Image source={require("@/assets/logo.png")} style={styles.logo} />
+      <Button title="Entrar" />
     </View>
   );
 }
